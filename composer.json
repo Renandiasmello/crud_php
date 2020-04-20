@@ -1,0 +1,17 @@
+{
+    "name": "renan-mello/crud_php",
+    "require": {
+		"php": ">=7.0.0"
+    },
+    "authors": [
+        {
+            "name": "Renan Mello",
+            "email": "renandiasmello182@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "": ["src/"]
+        }
+    }
+}

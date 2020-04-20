@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>Sistema Cadastro de Clientes</title>
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Estilos -->
+    <link href="<?=STATIC_URL?>/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="<?=STATIC_URL?>/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="<?=STATIC_URL?>/bootstrap.js"></script>
+    <script type="text/javascript" src="<?=STATIC_URL?>/bootbox.min.js"></script>
+    <script type="text/javascript" src="<?=STATIC_URL?>/funcoes.js"></script>
+
+  </head>
+
+  <body>
+
+    <!-- Container -->
+
+    <div class="container">
+
+      <!-- Barra de navegação -->
+
+      <div class="navbar">
+          <div class="navbar-inner">
+            <div class="container">
+
+              <!-- Opções de Menu -->
+              <div class="nav-collapse">
+
+                <ul class="nav">
+                  <li class="active"><a href="<?=SITE_URL;?>/">Home</a></li>
+                  <li><a href="<?=SITE_URL;?>/cliente/novo">Novo Cliente</a></li>
+                </ul>
+
+                <?php if( CRUD\Session::get("logado") ): ?>
+                    <ul class="nav rigth">
+                    <li class="active"><a href="<?=SITE_URL;?>/index/logout">Logout</a></li>
+                    </ul>
+                <?php endif; ?>
+              </div><!-- /.nav-collapse -->
+            </div>
+          </div><!-- /navbar-inner -->
+        </div>
